@@ -12,9 +12,9 @@
 <title>🕊️ 星河博物馆</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
-*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;overflow:hidden}
-body{font-family:-apple-system,'PingFang SC','Noto Sans SC','Hiragino Sans GB',sans-serif;transition:background .4s,color .4s;background:#0a0e1a;color:#e8e0d4}
-#app{position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden}
+*{box-sizing:border-box;margin:0;padding:0}html{height:100%;height:-webkit-fill-available;height:100dvh;overflow:hidden}
+body{height:100%;min-height:-webkit-fill-available;min-height:100dvh;overflow:hidden;font-family:-apple-system,'PingFang SC','Noto Sans SC','Hiragino Sans GB',sans-serif;transition:background .4s,color .4s;background:#0a0e1a;color:#e8e0d4;padding:env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left)}
+#app{position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden;padding-bottom:env(safe-area-inset-bottom)}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{border-radius:4px}
 ::selection{background:var(--glow);color:var(--accent)}
 @keyframes spin{to{transform:rotate(360deg)}}
